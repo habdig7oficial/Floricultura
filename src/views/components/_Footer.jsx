@@ -13,10 +13,13 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 */
 
-export default function Footer(){
-    return(
-        <>
-            <p>Footer</p>
-        </>
-    )
+export default function Footer() {
+  return (
+    <>
+      <p>
+        Copyright &#169; {new Date().getFullYear()} Heloísa Real, Thiago
+        Baptista, Mateus Vieira
+      </p>
+    </>
+  );
 }

@@ -13,18 +13,18 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 */
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./views/Home"
+import Home from "./views/Home";
 
-export default function App(){
-  return(
-    <>  
+export default function App() {
+  return (
+    <>
       <BrowserRouter>
         <Routes>
-          <Route path="/"  element={ <Home /> }></Route>
+          <Route path="/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }

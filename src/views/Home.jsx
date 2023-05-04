@@ -13,13 +13,15 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 */
 
-import NavBar from "./components/_Navbar"
+import NavBar from "./components/_Navbar";
+import Footer from "./components/_Footer";
 
-export default function Home(){
-    return(
-        <>
-            <NavBar />
-            <h1>Home</h1>
-        </>
-    )
+export default function Home() {
+  return (
+    <>
+      <NavBar />
+      <h1>Home</h1>
+      <Footer />
+    </>
+  );
 }
