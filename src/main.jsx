@@ -5,7 +5,7 @@ import './index.css'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-import bootstrap from "bootstrap";
+//import bootstrap from "bootstrap";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
