@@ -13,10 +13,10 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 */
 
-export default function NavBar(){
-    return(
-        <>
-            <p>NavBar</p>
-        </>
-    )
+export default function NavBar() {
+  return (
+    <>
+      <p>NavBar</p>
+    </>
+  );
 }

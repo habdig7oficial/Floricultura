@@ -13,10 +13,10 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 */
 
-export default function Footer(){
-    return(
-        <>
-            <p>Footer</p>
-        </>
-    )
+export default function Footer() {
+  return (
+    <>
+      <p>Footer</p>
+    </>
+  );
 }
