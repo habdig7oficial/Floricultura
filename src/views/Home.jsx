@@ -14,12 +14,14 @@
 */
 
 import NavBar from "./components/_Navbar";
+import Footer from "./components/_Footer";
 
 export default function Home() {
   return (
     <>
       <NavBar />
       <h1>Home</h1>
+      <Footer />
     </>
   );
 }

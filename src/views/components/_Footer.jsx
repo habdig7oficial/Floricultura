@@ -16,7 +16,10 @@
 export default function Footer() {
   return (
     <>
-      <p>Footer</p>
+      <p>
+        Copyright &#169; {new Date().getFullYear()} Heloísa Real, Thiago
+        Baptista, Mateus Vieira
+      </p>
     </>
   );
 }
