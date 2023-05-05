@@ -88,7 +88,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--cinza-escuro);
+  color: var(--vermelho-escuro);
 }
 
 .navbar-items {
