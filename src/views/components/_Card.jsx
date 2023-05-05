@@ -1,4 +1,4 @@
-export default function Card({ src = "../../public/flor.jpg" }) {
+export default function Card({ src = "/flor.jpg" }) {
   return (
     <>
       <div className="card rounded">
