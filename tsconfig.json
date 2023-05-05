@@ -8,10 +8,13 @@
     /* Bundler mode */
     "moduleResolution": "node",
     //"allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+
+    "outDir": "./builds",
 
     /* Linting */
     "strict": true,

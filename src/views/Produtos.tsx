@@ -3,6 +3,11 @@ import Footer from "./components/_Footer";
 import Card from "./components/_Card";
 
 function Produtos() {
+  const cards: Array<JSX.Element> = [];
+
+  for (let i = 0; i < 6; i++) {
+    cards.push(<Card />);
+  }
   return (
     <>
       <Navbar />
@@ -14,14 +19,7 @@ function Produtos() {
         <h1>BUQUÊS</h1>
       </div>
 
-      <div className="card-group my-5">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <div className="card-group my-5">{cards}</div>
 
       <Footer />
     </>

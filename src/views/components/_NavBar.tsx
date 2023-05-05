@@ -1,7 +1,7 @@
 import LogoVariation from "/LogoVariation.svg";
 
 function Navbar() {
-  let padding = 2;
+  let padding: number = 2;
   return (
     <>
       <nav className="navbar">

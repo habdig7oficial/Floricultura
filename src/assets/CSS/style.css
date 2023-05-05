@@ -260,7 +260,8 @@ footer .credits span {
   height: 53vh;
 }
 
-.login div {
+.login div,
+.login form {
   display: flex;
   flex-direction: column;
   width: 50vh;
