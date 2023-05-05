@@ -20,27 +20,31 @@
     
 */
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./views/Home";
-import Cadastro from "./views/Cadastro";
-import Login from "./views/Login";
-import Produtos from "./views/Produtos";
-import NotFound from "./views/NotFound";
+import Navbar from "./components/_NavBar";
+import Footer from "./components/_Footer";
 
-function App() {
+function Cadastro() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/produtos" element={<Produtos />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <Navbar />
+      <section className="login">
+        <form method="post">
+          <h1>Cadastro</h1>
+          <input type="text" name="text" placeholder="Insira Seu Nome" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="password" name="senha" id="senha" placeholder="Senha" />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Confirme Sua Senha"
+          />
+          <button className="LoginBtn">Efetuar Cadastro</button>
+        </form>
+      </section>
+      <Footer />
+    </>
   );
 }
 
-export default App;
+export default Cadastro;

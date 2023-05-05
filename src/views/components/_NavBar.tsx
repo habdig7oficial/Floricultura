@@ -17,7 +17,7 @@
     com este programa. Se não, veja <http://www.gnu.org/licenses/>.
 
     Licença disponível no arquivo COPYING.txt
-    
+
 */
 
 import LogoVariation from "/LogoVariation.svg";
@@ -49,6 +49,9 @@ function Navbar() {
           </a>
           <a className={"px-" + padding} href="/login">
             Login
+          </a>
+          <a className={"px-" + padding} href="/cadastro">
+            Cadastro
           </a>
         </div>
       </nav>

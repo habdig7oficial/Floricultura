@@ -20,27 +20,29 @@
     
 */
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./views/Home";
-import Cadastro from "./views/Cadastro";
-import Login from "./views/Login";
-import Produtos from "./views/Produtos";
-import NotFound from "./views/NotFound";
+import { Location } from "react-router-dom";
 
-function App() {
+import Navbar from "./components/_NavBar";
+import Card from "./components/_Card";
+import Footer from "./components/_Footer";
+
+function NotFound() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/produtos" element={<Produtos />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <Navbar />
+      <main className="sobre">
+        <h1>Erro 404</h1>
+        <p className="text-black">
+          Erro a página <span className="strong-pink">{location.pathname}</span>{" "}
+          não foi encontrada
+        </p>
+      </main>
+
+      <div className="d-flex justify-content-center">
+        <img src="/Site.png" alt="Logo"></img>
+      </div>
+      <Footer />
+    </>
   );
 }
-
-export default App;
+export default NotFound;

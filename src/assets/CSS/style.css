@@ -92,6 +92,15 @@ nav a:hover {
   height: 65px;
 }
 
+.text-black {
+  color: var(--black) !important;
+}
+
+.strong-pink {
+  color: var(--rosa-claro) !important;
+  font-weight: bold;
+}
+
 .l-width {
   max-width: 3.9rem;
 }
