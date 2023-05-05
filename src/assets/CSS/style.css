@@ -29,6 +29,7 @@
   --rosa-claro: rgba(255, 217, 220);
   --rosa-escuro: rgba(202, 137, 143);
   --verde-camomila: rgba(148, 174, 137);
+  --vermelho-escuro: rgba(159, 57, 57);
   --cinza-escuro: rgba(029, 029, 029);
 }
 
@@ -42,6 +43,19 @@ body {
 body {
   background-color: var(--verde-camomila);
   font-family: "Source Serif Pro", serif;
+}
+
+svg {
+  width: 3rem !important;
+  color: var(--rosa-escuro);
+  margin: 0.8rem;
+  overflow: visible;
+}
+
+path {
+  stroke: var(--vermelho-escuro);
+  stroke-width: 1.3%;
+  overflow: visible;
 }
 
 .navbar {
