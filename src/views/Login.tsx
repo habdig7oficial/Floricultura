@@ -34,7 +34,13 @@ function Login() {
           <input type="password" name="senha" id="senha" placeholder="Senha" />
           <button className="LoginBtn">Login</button>
         </form>
+        <div className="text-center mt-1 p-1 rounded-5">
+          <a className="p-2" href="/cadastro">
+            Não poussui uma conta?
+          </a>
+        </div>
       </section>
+
       <Footer />
     </>
   );

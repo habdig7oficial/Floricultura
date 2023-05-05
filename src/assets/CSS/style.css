@@ -45,6 +45,21 @@ body {
   font-family: "Source Serif Pro", serif;
 }
 
+::selection {
+  background-color: var(--rosa-claro);
+  color: var(--vermelho-escuro);
+}
+
+a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--rosa-claro);
+  text-decoration: underline;
+}
+
 svg {
   width: 3rem !important;
   color: var(--rosa-escuro);

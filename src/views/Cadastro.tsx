@@ -40,6 +40,11 @@ function Cadastro() {
             placeholder="Confirme Sua Senha"
           />
           <button className="LoginBtn">Efetuar Cadastro</button>
+          <div className="text-center mt-1 p-1 rounded-5">
+            <a className="p-2" href="/login">
+              Já poussui uma conta?
+            </a>
+          </div>
         </form>
       </section>
       <Footer />
