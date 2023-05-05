@@ -8,7 +8,7 @@ function Footer() {
         </p>
         <div className="credits">
           <small>
-            Copyright &#169; {new Date().getFullYear} Heloísa Real, Thiago
+            Copyright &#169; {new Date().getFullYear()} Heloísa Real, Thiago
             Baptista, Mateus Vieira
           </small>
         </div>

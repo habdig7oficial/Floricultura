@@ -1,4 +1,3 @@
-import Logo from "/Logo.png";
 import LogoVariation from "/LogoVariation.svg";
 
 function Navbar() {
@@ -14,7 +13,7 @@ function Navbar() {
             alt="Flores Ilustraçao"
           ></img>
 
-          <div className="mx-4">
+          <div className="mx-3">
             <h5 className="mx-1 NavTitle">Flor de Lis</h5>
             <p className="NavSTitle">Deixe florecer</p>
           </div>
