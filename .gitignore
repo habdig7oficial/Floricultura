@@ -1,0 +1,17 @@
+## Remove node_modules
+
+node_modules
+
+## Remove env
+
+*.env
+
+## Remove Js builds
+
+build
+*.js
+
+## Remove Scripts
+
+*.sh
+
