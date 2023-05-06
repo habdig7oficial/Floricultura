@@ -20,7 +20,10 @@
     
 */
 
-interface image {
+import { useEffect, useState } from "react";
+
+
+export interface image {
   src?: string;
   alt?: string;
   title?: string;
@@ -28,20 +31,20 @@ interface image {
 }
 
 export default function Card({
-  src = "/flor.jpg",
-  alt = "Flor",
-  title = "Flor",
-  text = "Flores são lindas. Compre já!",
-}: image) {
+  src = ``,
+  alt = `Espere carregando`,
+  title = `Loading ...`,
+  text = `...........................................`,
+}) {
   return (
     <>
-      <div className="card rounded">
-        <img src={src} alt={alt} />
-        <div>
-          <h4>{title}</h4>
-          <p>{text}</p>
-        </div>
+    <div className="card rounded">
+      <img src={ src } alt={ alt } />
+      <div>
+        <h4>{ title }</h4>
+        <p>{ text }</p>
       </div>
-    </>
+    </div>
+  </>
   );
 }

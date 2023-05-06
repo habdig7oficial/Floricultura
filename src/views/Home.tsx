@@ -20,15 +20,38 @@
     
 */
 
+import { useState, useEffect } from "react";
+
 import Navbar from "./components/_NavBar";
 import Card from "./components/_Card";
 import Footer from "./components/_Footer";
 
+import type { image } from "./components/_Card";
+
 function Home() {
+  
   const cards: Array<JSX.Element> = [];
 
-  for (let i = 0; i < 5; i++) {
-    cards.push(<Card />);
+  let dummyData: Array<image> = [{
+    src: "/flor.jpg",
+    alt: "Flor",
+    title: "Flor",
+    text: "Flores são lindas. Compre já!",
+  }]
+
+  let [Data, SetData] = useState(dummyData);
+
+  useEffect(() => {
+  fetch(`http://localhost:7778/`)
+   .then((response) => response.json())
+   .then((flores) => { 
+      SetData(flores)
+    });
+ }, []);
+
+
+  for (let i = 0; i < Data.length; i++) {
+    cards.push(<Card src={ Data[i].src } alt={ Data[i].alt } title={ Data[i].title } text={ Data[i].text } key={ i } />);
   }
 
   return (
