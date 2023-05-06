@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 
-import ControllerIndex from "./index-api";
+import ControllerIndex from "../routes/index-api";
 
 interface IRouterObj {
   path: string;
@@ -13,3 +13,5 @@ export let Get: IRouterObj[] = [
     ctrl: ControllerIndex,
   },
 ];
+
+export let Post: IRouterObj[] = [];
