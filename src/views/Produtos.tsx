@@ -28,7 +28,7 @@ function Produtos() {
   const cards: Array<JSX.Element> = [];
 
   for (let i = 0; i < 6; i++) {
-    cards.push(<Card />);
+    cards.push(<Card key={i} />);
   }
   return (
     <>

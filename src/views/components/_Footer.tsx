@@ -53,7 +53,7 @@ function Footer() {
   for (let i = 0; i < icons.length; i++) {
     if (typeof icons[i].path2 == "undefined") {
       components_icons.push(
-        <a href={icons[i].link}>
+        <a key={i} href={icons[i].link}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -66,7 +66,7 @@ function Footer() {
       );
     } else {
       components_icons.push(
-        <a href={icons[i].link}>
+        <a key={i} href={icons[i].link}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
